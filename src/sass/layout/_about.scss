@@ -1,0 +1,199 @@
+.about {
+  padding-top: 125px;
+  padding-bottom: 39px;
+  background-color: var(--pink-section-bg);
+
+  background-image: url('../images/about/milk-mob-x1.png');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/about/milk-mob-x2.png');
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/about/milk-dek-x1.png');
+  }
+  @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/about/milk-dek-x2.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 125px;
+    padding-bottom: 39px;
+  }
+}
+
+.about-background {
+  margin: 0 auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media screen and (max-width: 767px) {
+    background-position-y: 88%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: unset;
+    background-position-y: 88%;
+  }
+}
+
+.about__pre-title {
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
+}
+
+.about__title {
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  width: 200px;
+  margin-bottom: 26px;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    margin-bottom: 55px;
+  }
+}
+
+.about-wrap {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.about-img {
+  @media screen and (min-width: 768px) {
+    margin-right: 17px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 74px;
+  }
+}
+
+.about-content {
+  padding: 0 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 340px;
+    margin-top: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 463px;
+  }
+}
+
+.about-content__pre-text {
+  margin-bottom: 39px;
+
+  font-size: 12px;
+  line-height: 1.58;
+  color: var(--third-text-color);
+  letter-spacing: normal;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.79;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.04em;
+  }
+}
+
+.about-content__text {
+  font-size: 12px;
+  line-height: 1.58;
+  letter-spacing: normal;
+  margin-bottom: 17px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.79;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.93;
+  }
+}
+
+.about-content__after-text {
+  font-size: 12px;
+  line-height: 1.58;
+  margin-bottom: 17px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.79;
+    letter-spacing: 0.04em;
+    margin-bottom: 62px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.93;
+    margin-bottom: 50px;
+  }
+}
+
+.about-content__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto 37px;
+  width: 176px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #d41443;
+  border: 1px solid transparent;
+  border-radius: 22px;
+  background-color: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-light-bg-hov-foc);
+  }
+}
+
+.about-content__icon {
+  margin-left: 13px;
+  fill: var(--btn-bg-red);
+  &:hover {
+    fill: var(--secondary-text-color);
+  }
+}
